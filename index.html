@@ -51,21 +51,17 @@
 
 <p>Created by Alex Becker <a href="mailto:byaxy@insulatejs.com">byaxy@insulatejs.com</a>.</p>
 
-<p>Jquery plugin to make ids and classes from variables</p>
+<p>Jquery plugin to make ids and classes from variables </p>
 
-<p>Simple plugin to turn params   </p>
-
-<pre><code> $('boo').toId() is equivalent of $('#boo')
- $('boo').toCl() is equivalent of $('.boo')
+<pre><code> $('boo').toId() is equivalent of $('#boo');
+ $('boo').toCl() is equivalent of $('.boo');
 </code></pre>
 
 <p>Example: 
 This will take class names from all a links, will turn them to ids and hide elements with these ids    </p>
 
-<pre><code> $('li a').each(function(index, value){
-
-        $(value.className).toId().hide()
-
+<pre><code> $('li a').each(function(index, value){         
+        $(value.className).toId().hide();   
     });
 </code></pre>
       </section>
@@ -84,6 +80,16 @@ This will take class names from all a links, will turn them to ids and hide elem
 
     </div>
 
-    
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-69921650-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
