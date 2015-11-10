@@ -51,18 +51,20 @@
 
 <p>Created by Alex Becker <a href="mailto:byaxy@insulatejs.com">byaxy@insulatejs.com</a>.</p>
 
-<p>Jquery plugin to make ids and classes from variables </p>
+<p>Jquery plugin to dynamicly make ids and classes from variables   </p>
 
-<pre><code> $('boo').toId() is equivalent of $('#boo');
- $('boo').toCl() is equivalent of $('.boo');
+<pre><code>     var myClass = 'foo';
+     var myId = 'bar';
+     $(myClass).toId() is equivalent of $('#myClass');
+     $(myId).toCl() is equivalent of $('.bar');
 </code></pre>
 
 <p>Example: 
 This will take class names from all a links, will turn them to ids and hide elements with these ids    </p>
 
-<pre><code> $('li a').each(function(index, value){         
-        $(value.className).toId().hide();   
-    });
+<pre><code>     $('li a').each(function(index, value){         
+         $(value.className).toId().hide();   
+       });
 </code></pre>
       </section>
 
