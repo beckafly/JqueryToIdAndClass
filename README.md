@@ -1,7 +1,7 @@
 # Jquery To Id And Class
 Created by Alex Becker byaxy@insulatejs.com.
 
-Jquery plugin to dynamicly make ids and classes from variables    
+Jquery plugin to dynamicly make ids and classes from strings and wrap then in a jquery object.   
 
 
      var myClass = 'foo';
@@ -14,4 +14,6 @@ This will take class names from all a links, will turn them to ids and hide elem
    
      $('li a').each(function(index, value){    		
      		$(value.className).toId().hide();   
-     	});
+     });
+     
+     
